@@ -22,8 +22,6 @@ ReactDOM.render(dummyComponent, root)
 
 Rollup will magically includes only what you need in your bundle depending on the imports!
 
-Please not that this starter project [doesn't use JSX templates which are not currently handled by Bublé](https://gitlab.com/Rich-Harris/buble/issues/26). If you really want JSX to be part of your workflow, please give [babel-react-rollup-starter](https://github.com/yamafaktory/babel-react-rollup-starter) a try!
-
 ## Prerequisite
 
 ### NodeJS

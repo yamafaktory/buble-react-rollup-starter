@@ -5,12 +5,14 @@ import globals from 'rollup-plugin-node-globals'
 import npm from 'rollup-plugin-npm'
 import replace from 'rollup-plugin-replace'
 import resolve from 'rollup-plugin-node-resolve'
+import jsx from 'rollup-plugin-jsx'
 
 export default {
   dest: 'build/app.js',
   entry: 'src/index.js',
   format: 'iife',
   plugins: [
+    jsx({factory: 'React.createElement'}),
     buble(),
     cjs({
       exclude: 'node_modules/process-es6/**',
