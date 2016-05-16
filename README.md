@@ -53,7 +53,7 @@ npm i buble-react-rollup-starter
 A basic workflow involving [Browsersync](https://www.browsersync.io/) is already implemented. Running the following command will open your default browser pointing to the `html/index-dev.html` file. Any modification of one of the files included in the *src* directory will trigger a new development build and refresh your browser:
 
 ```bash
-npm test
+npm start
 ```
 
 You can also generate a development build by running the following command:

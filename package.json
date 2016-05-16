@@ -50,7 +50,7 @@
     "build:dev": "rollup -c config/dev.js",
     "browse": "browser-sync start --s --index 'html/index-dev.html' --files 'html/**/*.html, build/**/*.js' --no-notify",
     "std": "standard --verbose | snazzy",
-    "test": "npm-run-all --parallel watch browse",
+    "start": "npm-run-all --parallel watch browse",
     "watch": "onchange src -- npm run build:dev",
     "preversion": "git pull && npm up && npm run std",
     "version": "npm run build && git add -A .",
