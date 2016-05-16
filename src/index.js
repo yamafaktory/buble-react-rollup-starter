@@ -1,4 +1,4 @@
-// Import React, ReactDOM and the component.
+// Import React, ReactDOM and the DummyComponent.
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { DummyComponent } from './components/dummy-component.js'
