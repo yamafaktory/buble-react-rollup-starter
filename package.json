@@ -1,0 +1,64 @@
+{
+  "name": "buble-react-rollup-starter",
+  "version": "1.0.0",
+  "title": "buble-react-rollup-starter",
+  "description": "A simple starter project to build cool React applications with Bublé and Rollup.",
+  "keywords": [
+    "Bublé",
+    "Browsersync",
+    "React",
+    "Rollup",
+    "StandardJS"
+  ],
+  "homepage": "https://github.com/yamafaktory/buble-react-rollup-starter",
+  "author": {
+    "name": "Davy Duperron",
+    "url": "https://github.com/yamafaktory"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yamafaktory/buble-react-rollup-starter"
+  },
+  "engines": {
+    "npm": ">=3.0.0",
+    "node": ">=5.0.0"
+  },
+  "dependencies": {
+    "react": "15.0.2",
+    "react-dom": "15.0.2"
+  },
+  "devDependencies": {
+    "buble": "0.8.4",
+    "browser-sync": "2.12.5",
+    "npm-run-all": "1.6.0",
+    "onchange": "2.2.0",
+    "rollup": "0.26.3",
+    "rollup-plugin-buble": "0.8.0",
+    "rollup-plugin-commonjs": "2.2.1",
+    "rollup-plugin-node-globals": "1.0.5",
+    "rollup-plugin-node-resolve": "1.5.0",
+    "rollup-plugin-npm": "1.4.0",
+    "rollup-plugin-replace": "1.1.0",
+    "rollup-plugin-uglify": "0.3.1",
+    "snazzy": "3.0.1",
+    "standard": "6.0.8"
+  },
+  "scripts": {
+    "prebuild": "npm run std",
+    "build": "rollup -c config/prod.js",
+    "build:dev": "rollup -c config/dev.js",
+    "browse": "browser-sync start --s --index 'html/index-dev.html' --files 'html/**/*.html, build/**/*.js' --no-notify",
+    "std": "standard --verbose | snazzy",
+    "test": "npm-run-all --parallel watch browse",
+    "watch": "onchange src -- npm run build:dev",
+    "preversion": "git pull && npm up && npm run std",
+    "version": "npm run build && git add -A .",
+    "postversion": "git push --tags origin HEAD"
+  },
+  "standard": {
+    "ignore": [
+      "build"
+    ]
+  }
+}
