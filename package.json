@@ -29,13 +29,14 @@
     "react-dom": "15.0.2"
   },
   "devDependencies": {
-    "buble": "0.8.4",
     "browser-sync": "2.12.5",
+    "buble": "0.8.4",
     "npm-run-all": "1.6.0",
     "onchange": "2.2.0",
     "rollup": "0.26.3",
     "rollup-plugin-buble": "0.8.0",
     "rollup-plugin-commonjs": "2.2.1",
+    "rollup-plugin-jsx": "^1.0.3",
     "rollup-plugin-node-globals": "1.0.5",
     "rollup-plugin-node-resolve": "1.5.0",
     "rollup-plugin-npm": "1.4.0",
@@ -50,11 +51,12 @@
     "build:dev": "rollup -c config/dev.js",
     "browse": "browser-sync start --s --index 'html/index-dev.html' --files 'html/**/*.html, build/**/*.js' --no-notify",
     "std": "standard --verbose | snazzy",
-    "test": "npm-run-all --parallel watch browse",
+    "start": "npm run build:dev && npm-run-all --parallel watch browse",
     "watch": "onchange src -- npm run build:dev",
     "preversion": "git pull && npm up && npm run std",
     "version": "npm run build && git add -A .",
-    "postversion": "git push --tags origin HEAD"
+    "postversion": "git push --tags origin HEAD",
+    "test": "npm run build:dev"
   },
   "standard": {
     "ignore": [

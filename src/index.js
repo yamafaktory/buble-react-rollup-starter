@@ -1,7 +1,7 @@
 // Import React, ReactDOM and the DummyComponent.
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { DummyComponent } from './components/dummy-component.js'
+import { DummyComponent } from './components/dummy-component.jsx'
 
 // Define the root element and instantiate the DummyComponent.
 const root = document.querySelector('main')

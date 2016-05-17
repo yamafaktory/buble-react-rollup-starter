@@ -14,15 +14,12 @@ import { DummyComponent } from './components/dummy-component.js'
 
 // Define the root element and instantiate the DummyComponent.
 const root = document.querySelector('main')
-const dummyComponent = React.createElement(DummyComponent)
 
 // Append the DummyComponent instance to the root element.
-ReactDOM.render(dummyComponent, root)
+ReactDOM.render(<DummyComponent />, root)
 ```
 
 Rollup will magically includes only what you need in your bundle depending on the imports!
-
-Please not that this starter project [doesn't use JSX templates which are not currently handled by Bublé](https://gitlab.com/Rich-Harris/buble/issues/26). If you really want JSX to be part of your workflow, please give [babel-react-rollup-starter](https://github.com/yamafaktory/babel-react-rollup-starter) a try!
 
 ## Prerequisite
 
@@ -53,7 +50,7 @@ npm i buble-react-rollup-starter
 A basic workflow involving [Browsersync](https://www.browsersync.io/) is already implemented. Running the following command will open your default browser pointing to the `html/index-dev.html` file. Any modification of one of the files included in the *src* directory will trigger a new development build and refresh your browser:
 
 ```bash
-npm test
+npm start
 ```
 
 You can also generate a development build by running the following command:
