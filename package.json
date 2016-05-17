@@ -55,7 +55,8 @@
     "watch": "onchange src -- npm run build:dev",
     "preversion": "git pull && npm up && npm run std",
     "version": "npm run build && git add -A .",
-    "postversion": "git push --tags origin HEAD"
+    "postversion": "git push --tags origin HEAD",
+    "test": "npm run build:dev"
   },
   "standard": {
     "ignore": [

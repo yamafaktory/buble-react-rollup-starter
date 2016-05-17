@@ -14,10 +14,9 @@ import { DummyComponent } from './components/dummy-component.js'
 
 // Define the root element and instantiate the DummyComponent.
 const root = document.querySelector('main')
-const dummyComponent = React.createElement(DummyComponent)
 
 // Append the DummyComponent instance to the root element.
-ReactDOM.render(dummyComponent, root)
+ReactDOM.render(<DummyComponent />, root)
 ```
 
 Rollup will magically includes only what you need in your bundle depending on the imports!
