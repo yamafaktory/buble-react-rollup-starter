@@ -4,9 +4,9 @@ import React from 'react'
 export class DummyComponent extends React.Component {
   render () {
     return (
-      <article>
-        <h1>Hi from DummyComponent.</h1>
-        <em>Now let's play with React &amp; JSX!</em>
+      <article key='article'>
+        <h1 key='title'>Hi from DummyComponent.</h1>
+        <em key='content'>Now let's play with React &amp; JSX!</em>
       </article>
     )
   }

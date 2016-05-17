@@ -7,16 +7,17 @@ The aim of this project is to provide a simple boilerplate to get started with R
 To sum up and give an overview of what can be achieved like a breath of fresh air:
 
 ```JavaScript
-// Import React, ReactDOM and the component.
+// Import React, ReactDOM and the DummyComponent.
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { DummyComponent } from './components/dummy-component.js'
+import { DummyComponent } from './components/dummy-component.jsx'
 
 // Define the root element and instantiate the DummyComponent.
 const root = document.querySelector('main')
+const dummyComponent = React.createElement(DummyComponent)
 
 // Append the DummyComponent instance to the root element.
-ReactDOM.render(<DummyComponent />, root)
+ReactDOM.render(dummyComponent, root)
 ```
 
 Rollup will magically includes only what you need in your bundle depending on the imports!
