@@ -2,7 +2,7 @@
   "name": "buble-react-rollup-starter",
   "version": "1.3.0",
   "title": "buble-react-rollup-starter",
-  "description": "A simple starter project to build cool React applications with Bublé and Rollup.",
+  "description": "A simple boilerplate for web apps with React, Bublé and Rollup.",
   "keywords": [
     "Bublé",
     "Browsersync",

@@ -1,6 +1,6 @@
 # buble-react-rollup-starter [![Build Status](https://travis-ci.org/yamafaktory/buble-react-rollup-starter.svg?branch=master)](https://travis-ci.org/yamafaktory/buble-react-rollup-starter) [![npm version](https://img.shields.io/npm/v/buble-react-rollup-starter.svg?style=flat)](https://www.npmjs.com/package/buble-react-rollup-starter) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-> A simple starter project to build cool [React](https://facebook.github.io/react/) applications with [Bublé](https://buble.surge.sh/guide/) and [Rollup](http://rollupjs.org/).
+> A simple boilerplate for web apps with [React](https://facebook.github.io/react/), [Bublé](https://buble.surge.sh/guide/) and [Rollup](http://rollupjs.org/).
 
 The aim of this project is to provide a simple boilerplate to get started with React bundled as an ES2015 module via Rollup, compiled by Bublé.
 
@@ -70,7 +70,7 @@ npm run build
 
 Then open the `html/index.html` file in your browser.
 
-The Rollup production configuration file switch the NodeJS environment to production and minify the code with [UglifyJS](http://lisperator.net/uglifyjs/).
+The Rollup production configuration file switch the NodeJS environment to production and minifies the code with [UglifyJS](http://lisperator.net/uglifyjs/).
 
 ## Linting
 
