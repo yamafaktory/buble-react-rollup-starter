@@ -1,4 +1,4 @@
-# buble-react-rollup-starter [![Build Status](https://travis-ci.org/yamafaktory/buble-react-rollup-starter.svg?branch=master)](https://travis-ci.org/yamafaktory/buble-react-rollup-starter) [![npm version](https://img.shields.io/npm/v/buble-react-rollup-starter.svg?style=flat)](https://www.npmjs.com/package/buble-react-rollup-starter) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+# buble-react-rollup-starter [![Build Status](https://travis-ci.org/yamafaktory/buble-react-rollup-starter.svg?branch=master)](https://travis-ci.org/yamafaktory/buble-react-rollup-starter) [![npm version](https://img.shields.io/npm/v/buble-react-rollup-starter.svg?style=flat)](https://www.npmjs.com/package/buble-react-rollup-starter) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 > A simple boilerplate for web apps with [React](https://facebook.github.io/react/), [Bublé](https://buble.surge.sh/guide/) and [Rollup](http://rollupjs.org/).
 
