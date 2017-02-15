@@ -29,19 +29,21 @@ The easiest way to go is to use [nvm](https://github.com/creationix/nvm) and to 
 
 ## Installation
 
-Clone this repository.
+Via **npm** into a fresh project:
 
-```bash
-git clone https://github.com/yamafaktory/buble-react-rollup-starter
+```sh
+npm i buble-react-rollup-starter
+```
+
+Or using Git:
+
+```sh
+git clone https://github.com/yamafaktory/buble-react-rollup-starter.git
 cd buble-react-rollup-starter
 npm i
 ```
 
-Or even better, use *npm*!
-
-```bash
-npm i buble-react-rollup-starter
-```
+For a faster installation, use [yarn](https://yarnpkg.com/en/) instead of npm.
 
 ## Usage
 
