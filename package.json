@@ -29,7 +29,7 @@
     "react-dom": "15.5.4"
   },
   "devDependencies": {
-    "browser-sync": "2.18.8",
+    "browser-sync": "2.18.9",
     "npm-run-all": "4.0.2",
     "onchange": "3.2.1",
     "rollup": "0.41.6",
