@@ -31,7 +31,6 @@
   "devDependencies": {
     "browser-sync": "2.18.11",
     "npm-run-all": "4.0.2",
-    "onchange": "3.2.1",
     "rollup": "0.41.6",
     "rollup-plugin-buble": "0.15.0",
     "rollup-plugin-commonjs": "8.0.2",
@@ -39,6 +38,7 @@
     "rollup-plugin-node-resolve": "3.0.0",
     "rollup-plugin-replace": "1.1.1",
     "rollup-plugin-uglify": "1.0.2",
+    "rollup-watch": "3.2.2",
     "snazzy": "6.0.0",
     "standard": "10.0.2"
   },
@@ -46,15 +46,14 @@
     "prebuild": "npm run std --silent",
     "build": "rollup -c config/prod.js",
     "prebuild:dev": "npm run std --silent",
-    "build:dev": "rollup -c config/dev.js",
+    "build:dev": "rollup -c config/dev.js -w",
     "preversion": "git pull && npm up && npm run std --silent",
     "version": "npm run build && git add -A .",
     "postversion": "git push --tags origin HEAD",
     "browse": "browser-sync start --s --index 'html/index-dev.html' --files 'html/**/*.html, build/**/*.js' --no-notify",
-    "start": "npm run build:dev && npm-run-all --parallel watch browse",
+    "start": "npm-run-all --parallel build:dev browse",
     "std": "standard --verbose | snazzy",
-    "test": "npm run build:dev",
-    "watch": "onchange src -- npm run build:dev"
+    "test": "npm run build:dev"
   },
   "standard": {
     "ignore": [
