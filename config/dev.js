@@ -6,14 +6,17 @@ import replace from 'rollup-plugin-replace'
 import resolve from 'rollup-plugin-node-resolve'
 
 export default {
-  dest: 'build/app.js',
-  entry: 'src/index.js',
-  format: 'iife',
+  input: 'src/index.js',
+  output: {
+    file: 'build/app.js',
+    format: 'iife'
+  },
   plugins: [
     buble(),
     cjs({
       exclude: 'node_modules/process-es6/**',
       include: [
+        'node_modules/create-react-class/**',
         'node_modules/fbjs/**',
         'node_modules/object-assign/**',
         'node_modules/react/**',
@@ -28,5 +31,5 @@ export default {
       main: true
     })
   ],
-  sourceMap: true
+  sourcemap: true
 }
