@@ -9,7 +9,8 @@ export default {
   input: 'src/index.js',
   output: {
     file: 'build/app.js',
-    format: 'iife'
+    format: 'iife',
+    sourcemap: true
   },
   plugins: [
     buble(),
@@ -30,6 +31,5 @@ export default {
       browser: true,
       main: true
     })
-  ],
-  sourcemap: true
+  ]
 }
